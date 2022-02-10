@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webchat - Version 2</title>
+    <link rel="stylesheet" href="myStyles.css">
+</head>
+<body>
+
+    <div id="left-sidebar">
+        <div id="sidebar-content">
+            <div id="username">
+                <div id="username-title">username</div>
+                <ul><li>
+                    <label for="username-field">@</label>
+                    <input type="text" id="username-field" value="enter username">
+                    <button type="button" id="set-username-btn" class="sidebar-btn">set</button>
+                </li></ul>
+            </div>
+            <br>
+            <div id="room-list">
+                <div id="room-list-title">rooms</div>
+                <ul id="room-list-ul">
+                    <div id="current-room-list"></div>
+                    <div id="join-room-field">
+                        <li class="room-field-wrap">
+                            <label for="room-field">#</label>
+                            <input id="room-field" type="text" value="enter username first" readonly="readonly">
+                            <button type="button" id="join-room-btn" class="sidebar-btn">join</button>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <br>
+            <div id="member-list">
+                <div id="member-list-title">members</div>
+                <ul>
+                    <div id="current-member-list"></div>
+                </ul>
+            </div>
+            <br>
+            <div id="server-status-wrap">
+                <div id="server-status-title">server status</div>
+                <ul>
+                    <div>
+                        <li>
+                            <input class="server-status locked" type="text" value="" readonly="readonly">
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="top-bar">
+        <p id="chatroom-title">chatroom: no room selected<br><br>enter username and join a room to start</p>
+        <button type="button" id="exit-room-btn">exit</button>
+    </div>
+
+    <div id="main-canvas"></div>
+
+    <div id="composer-wrap">
+        <label for="composer" id="composer-label">Compose a message:</label>
+        <br><br>
+        <textarea id="composer">Enter username and join a room first.</textarea>
+        <input type="button" id="send-btn" value="SEND">
+    </div>
+
+    <script type="text/javascript" src="myScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webchat - Version 2</title>
+    <link rel="stylesheet" href="myStyles.css">
+</head>
+<body>
+
+<div id="left-sidebar">
+    <div id="username">
+        <h1 id="username-title">username</h1>
+        <ul><li>
+            <label for="username-field">@</label>
+            <input type="text" id="username-field" value="set_username">
+            <button type="button" class="set-username-btn sidebar-btn">Set</button>
+        </li></ul>
+    </div>
+    <div id="room-list">
+        <h1 id="room-list-title">rooms</h1>
+        <ul>
+            <div id="current-room-list">
+                <li class="room-name-wrap">
+                    <label>#</label>
+                    <input class="room-name locked" type="text" value="room_one" readonly="readonly">
+                    <button type="button" class="exit-btn sidebar-btn">Exit</button>
+                </li>
+                <li class="room-name-wrap">
+                    <label>#</label>
+                    <input class="room-name locked" type="text" value="room_one" readonly="readonly">
+                    <button type="button" class="exit-btn sidebar-btn">Exit</button>
+                </li>
+                <li class="room-name-wrap">
+                    <label>#</label>
+                    <input class="room-name locked" type="text" value="room_one" readonly="readonly">
+                    <button type="button" class="exit-btn sidebar-btn">Exit</button>
+                </li>
+            </div>
+            <div id="join-room-field">
+                <li class="room-name">
+                    <label for="room-field">#</label>
+                    <input class="room-name" id="room-field" type="text" value="enter a room name">
+                    <button type="button" class="join-btn sidebar-btn">Join</button>
+                </li>
+            </div>
+        </ul>
+    </div>
+    <div id="member-list">
+        <h1 id="member-list-title">members</h1>
+        <ul>
+            <div id="current-member-list">
+                <li class="member-name-wrap">
+                    <label>@</label>
+                    <input class="member-name locked" type="text" value="member_one" readonly="readonly">
+                </li>
+                <li class="member-name-wrap">
+                    <label>@</label>
+                    <input class="member-name locked" type="text" value="member_two" readonly="readonly">
+                </li>
+                <li class="member-name-wrap">
+                    <label>@</label>
+                    <input class="member-name locked" type="text" value="member_three" readonly="readonly">
+                </li>
+            </div>
+        </ul>
+    </div>
+</div>
+
+<div id="top-bar">
+    <h3>username: @username_not_set</h3>
+    <h3>chatroom: #room_not_set</h3>
+    <h3>3 members</h3>
+</div>
+
+<div id="main-canvas">
+    <div class="user-message-block">
+        <p class="message-sender">@user-one</p>
+        <p class="message-content">Something stupid to put in here.</p>
+        <p class="message-timestamp">Oct 30, 6:52 PM</p>
+    </div>
+    <div class="user-message-block from-current-user">
+        <p class="message-sender">@user-one</p>
+        <p class="message-content">Something stupid to put in here.</p>
+        <p class="message-timestamp">Oct 30, 6:52 PM</p>
+    </div>
+    <div class="system-message-block">
+        <p class="system-message-content">Some stupid system message.</p>
+    </div>
+    <div class="user-message-block">
+        <p class="message-sender">@user-one</p>
+        <p class="message-content">Something stupid to put in here.</p>
+        <p class="message-timestamp">Oct 30, 6:52 PM</p>
+    </div>
+</div>
+
+<div id="composer-wrap">
+    <label for="composer">Compose a message:</label>
+    <br><br>
+    <textarea id="composer"></textarea>
+    <input type="button" id="send-btn" value="SEND">
+</div>
+
+<script type="text/javascript" src="myScript.js"></script>
+</body>
+</html>

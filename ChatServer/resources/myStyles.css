@@ -1,0 +1,220 @@
+#left-sidebar {
+    background-color: cornflowerblue;
+    color: ghostwhite;
+    width: 27vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-left: 3vw;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#sidebar-content {
+    position: absolute;
+    top: 2vh;
+}
+
+#username-title {
+    font-weight: bolder;
+}
+
+#room-list-title {
+    font-weight: bolder;
+}
+
+#member-list-title {
+    font-weight: bolder;
+}
+
+#server-status-title {
+    font-weight: bolder;
+}
+
+#top-bar {
+    background-color: palegoldenrod;
+    position: absolute;
+    top: 0;
+    left: 30vw;
+    width: 67vw;
+    height: 11vh;
+    padding-left: 3vw;
+}
+
+#main-canvas {
+    background-color: ghostwhite;
+    position: absolute;
+    top: 11vh;
+    height: 76vh;
+    left: 30vw;
+    width: 67vw;
+    padding-left: 4vw;
+    overflow: scroll;
+}
+
+#composer-wrap {
+    background-color: palegoldenrod;
+    position: absolute;
+    bottom: 0;
+    left: 30vw;
+    width: 67vw;
+    height: 13vh;
+    padding-left: 3vw;
+    padding-top: 1vh;
+}
+
+#composer {
+    position: absolute;
+    top: 4vh;
+    width: 45vw;
+    height: 7vh;
+    resize: none;
+    background-color: lightgrey;
+    color: gray;
+}
+
+#composer-label {
+    font-size: small;
+}
+
+#send-btn {
+    position: absolute;
+    left: 51vw;
+    top: 3vh;
+    background-color: ghostwhite;
+    width: 10vw;
+    height: 7vh;
+}
+
+#send-btn:hover {
+    background-color: mediumspringgreen;
+}
+
+#send-btn:active {
+    background-color: darkseagreen;
+}
+
+.locked {
+    background-color: cornflowerblue;
+    color: ghostwhite;
+    border: none;
+}
+
+.room-name {
+    cursor: pointer;
+    width: 26vw;
+    font-weight: lighter;
+}
+
+.notification {
+    width: 1vw;
+}
+
+#username-field {
+    background-color: ghostwhite;
+    color: gray;
+}
+
+#selected-room {
+    background-color: ghostwhite;
+    color: cornflowerblue;
+}
+
+#room-field {
+    background-color: lightgrey;
+    color: gray;
+}
+
+.sidebar-btn {
+    width: 5vw;
+    background-color: ghostwhite;
+    border: #515151;
+    font-size: small;
+}
+
+.sidebar-btn:hover {
+    background-color: mediumspringgreen;
+}
+
+.sidebar-btn:active {
+    background-color: darkseagreen;
+}
+
+#exit-room-btn {
+    width: 5vw;
+    background-color: ghostwhite;
+    border: #515151;
+    font-size: small;
+    display: none;
+}
+
+#exit-room-btn:hover {
+    background-color: mediumspringgreen;
+}
+
+#exit-room-btn:active {
+    background-color: darkseagreen;
+}
+
+.user-message-block {
+    padding-top: 1vh;
+}
+
+.system-message-block {
+    text-align: center;
+    width: 60vw;
+    padding-top: 1vh;
+    font-weight: bold;
+}
+
+.from-current-user {
+    padding-left: 20vw;
+}
+
+.message-sender {
+    font-size: small;
+    font-weight: bold;
+}
+
+.message-content {
+    border: 1px solid darkslategrey;
+    border-radius: 5px;
+    padding: 1vh 1vw 1vh 1vw;
+    width: 35vw;
+    font-size: small;
+    background-color: beige;
+    color: darkslategrey;
+}
+
+.message-timestamp {
+    width: 37vw;
+    text-align: right;
+    font-style: italic;
+    font-size: x-small;
+    font-weight: lighter;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input {
+    font-family: "PT Mono", "Droid Sans Mono" ,monospace;
+    font-size: medium;
+    margin-top: 1vh;
+    border: none;
+}
+
+button {
+    font-family: "PT Mono", "Droid Sans Mono" ,monospace;
+}
+
+textarea {
+    font-family: "PT Mono", "Droid Sans Mono" ,monospace;
+    border: none;
+}
+
+body {
+    font-family: "PT Mono", "Droid Sans Mono" ,monospace;
+}
