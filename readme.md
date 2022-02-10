@@ -1,6 +1,8 @@
 # Features added
 
-### Improve communication between the server and clients
+This application is a multithreading server that can handle incoming WebSocket requests. WebSocket handling code is built from the ground up (reading and parsing HTTP headers, encrypting and initiating WebSocket handshake, etc.). There is also a JavaScript client in the resources file that is meant to work with this WebSocket server.
+
+### SERVER
 
 The client (or the JavaScript code) can send the following messages/requests:
   - `user-message < room > < sender > < enoch-timestamp > < content >`: Send the message from the user to the server for distribution
@@ -17,7 +19,7 @@ The server can send JSON Objects that contain the following field:
   - Depending on the `"type"` of the JSON object it receives, the JavaScript will take appropriate actions. If it receives a system message or a user message, it prints them out on the canvas. If it receives a member list, it updates the current member list displayed on screen.
           
 
-### Improve Front-End UI
+### FRONTEND 
           
   - Add clarifications to guide the user through the step: Create a username > Join a room > Send a message. Add checks to make sure the user follows that exact process: The room field won't open unless the username field is set. The composer won't open unless both the room and the username is set.
   - Allow the user to be in multiple rooms at once. When the user enters a room, the room name field on the left side bar remains prompting the user to enter another room. Click on any active rooms on the left side bar to load its content on screen.
